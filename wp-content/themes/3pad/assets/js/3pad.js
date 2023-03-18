@@ -411,11 +411,13 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
 /////Refresh
 const buttonHomeRefresh = document.querySelector('.button_home_refresh');
 
-buttonHomeRefresh.addEventListener('click', (event) => {
-  event.preventDefault();
-  const timestamp = new Date().getTime();
-  const currentUrl = window.location.href;
-  const newUrl = currentUrl.indexOf('?') > -1 ? currentUrl.split('?')[0] : currentUrl;
-  window.location.href = newUrl + '?page_reload=' + timestamp;
-});
+if (buttonHomeRefresh !== null) {
+  buttonHomeRefresh.addEventListener('click', (event) => {
+    event.preventDefault();
+    const timestamp = new Date().getTime();
+    const currentUrl = window.location.href;
+    const newUrl = currentUrl.indexOf('?') > -1 ? currentUrl.split('?')[0] : currentUrl;
+    window.location.href = newUrl + '?page_reload=' + timestamp;
+  });
+}
 

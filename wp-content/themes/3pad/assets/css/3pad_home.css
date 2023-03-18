@@ -12,7 +12,8 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #123;
+  background-color: #373737;
+  filter: contrast(1.5);
 }
 
 .section-login{
@@ -446,7 +447,7 @@ box-shadow: -1px 1px 10px black;
   background: #00000075;
   color: #ffffffb8;
   margin-top: -4px;
-  width: 80%;
+  width: 60%;
   box-shadow: 1px -2px 20px 0px #00000075;
   text-align: center;
   font-size: 10px;

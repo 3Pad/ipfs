@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to deploy canisters to the IC
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install dependencies
         run: npm install
       - name: Deploy canisters
@@ -14,6 +14,5 @@ jobs:
         with:
           identity: ${{ secrets.DFX_IDENTITY }}
           wallets: ${{ secrets.DFX_WALLETS }}
-          dfx_params: --no-wallet
       - name: Show success message
         run: echo success!

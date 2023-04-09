@@ -12,8 +12,9 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #373737;
-  filter: contrast(1.5);
+  background-color: #1a1a1a;
+  filter: saturate(1.8);
+  -webkit-filter: saturate(1.8);
 }
 
 .section-login{

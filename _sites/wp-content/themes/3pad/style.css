@@ -1069,12 +1069,16 @@ color: black;
 
 
 #mp4video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
-	z-index: 1;
+  width: auto;
+  height: auto;
+  z-index: -1; /* set the video behind other content */
+  object-fit: cover; /* make the video cover the entire container */
 }
 
 
@@ -1605,7 +1609,7 @@ form {
     height: 0;
   }
   .expanded .comments-list {
-    height: 410px;
+    min-height: 360px;
     transform: translate(0px, 20px) scale(1);
     opacity: 1;
     border-radius: 10px;

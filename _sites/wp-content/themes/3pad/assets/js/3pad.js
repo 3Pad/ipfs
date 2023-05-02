@@ -1,3 +1,14 @@
+///Show Activate Button 
+jQuery(document).ready(function($) {
+    if ($('.checkout-button-container').is(':visible')) {
+      $('.activate-button').hide();
+    }
+  
+    if ($('#app-version').is(':visible')) {
+    $('.firstlogout').show();
+  }
+});
+
 //////////////////////////////////////////////////FadebuttonYoutube///////////////////////////////////////////////
 
 jQuery(document).ready(function(){
@@ -420,5 +431,7 @@ if (buttonHomeRefresh !== null) {
     window.location.href = newUrl + '?page_reload=' + timestamp;
   });
 }
+
+
 
 
